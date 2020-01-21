@@ -155,6 +155,7 @@ class MultRegression(object):
             cross validation loss
         iter_n : np.array
             iterations
+        <test comment for travis>
         """
         num_iter = (self.N // self.batch_size) * epochs
         cv = None
