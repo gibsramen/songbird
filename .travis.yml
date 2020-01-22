@@ -1,6 +1,6 @@
 # Travis yml file inspired by scikit-bio
 # Check on http://lint.travis-ci.org/ after modifying it!
-sudo: false
+sudo: true
 language: python
 env:
   - PYVERSION=3.5
