@@ -19,8 +19,8 @@ install:
   - conda env create -q -n test_env --file qiime2-latest-py36-linux-conda.yml
   - conda install --yes -q -n test_env --file ci/conda_requirements.txt -c biocore
   - source activate test_env
-  - pip uninstall scipy
-  - pip install scipy
+  - pip uninstall --yes scipy
+  - yes | pip install scipy
   - pip install -e .
 script:
   - make all
